@@ -1,3 +1,15 @@
+let maxArea = function maxArea(height) {
+    let area = 0;
+        for (let i = 0; i < height.length; i++) {
+            for (let j = i + 1; j < height.length; j++) {
+                area = Math.max(area, Math.min(height[j], height[i]) * (j - i));
+            }
+        }
+        return area;
+};
+
+
+
 
 
 
@@ -49,3 +61,18 @@
 // console.log(lengthOfLongestSubstring(h))
 
 
+// var countKDifference = function(nums, k) {
+//     let count = 0;
+//     for(let i = 0; i < nums.length - 1; i++) {
+//         debugger
+//         for(let j =1; j < nums.length; j++) {
+//             if(Math.abs(nums[i] - nums[j]) === k) {
+//                 count ++;
+                
+//                 console.log(nums[i])
+//                 console.log(nums[j])
+//             }
+//         }
+//     } 
+//     return count;
+// };
