@@ -1,12 +1,38 @@
-let maxArea = function maxArea(height) {
-    let area = 0;
-        for (let i = 0; i < height.length; i++) {
-            for (let j = i + 1; j < height.length; j++) {
-                area = Math.max(area, Math.min(height[j], height[i]) * (j - i));
-            }
-        }
-        return area;
-};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let maxArea = function maxArea(height) {
+//     let area = 0;
+//         for (let i = 0; i < height.length; i++) {
+//             for (let j = i + 1; j < height.length; j++) {
+//                 area = Math.max(area, Math.min(height[j], height[i]) * (j - i));
+//             }
+//         }
+//         return area;
+// };
 
 
 
