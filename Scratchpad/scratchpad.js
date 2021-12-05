@@ -1,5 +1,10 @@
 
-
+function squareDigits(num){
+    num.split('')
+    let squares = num.map(n => n * n)
+    
+    return squares.join('');
+}
 
 
 
