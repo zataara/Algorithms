@@ -5,22 +5,45 @@
 
 
 
+// function sortThePile(pileOfTowels, weeklyUsedTowels) {
+//     toSort = []
+//     while(weeklyUsedTowels > 0) {
+//         toSort.push(pileOfTowels.pop())
+//         weeklyUsedTowels --;
+//     }
+//     toSort.sort().reverse()
+
+//     return pileOfTowels.concat(toSort);
+// }
 
 
 
 
+// function autocomplete(input, dictionary){
+//     let out = [];
+    
+//     for (let word of dictionary) {
+//         compare = word.replace(/\W/g, '').slice(0,input.length)
+//         if(compare === input) {
+//             out.push(word)
+//         }
+//     }
+    
+//     return out;
+// }
 
 
 
+// var minMovesToSeat = function(seats, students) {
+//     let seat = seats.sort((a,b) => a -b);
+//     let student = students.sort((a,b) => a -b);
+//     let dif = [];
+//     for(let i = 0; i < seat.length; i++) {
+//         dif.push(Math.abs(seat[i] - student[i]))
+//     }
+//     return dif.reduce((a,b) => a + b)
 
-
-
-
-
-
-
-
-
+// };
 
 
 
