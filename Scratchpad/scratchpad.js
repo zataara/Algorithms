@@ -1,13 +1,16 @@
 
-function squareDigits(num){
-    num.split('')
-    let squares = num.map(n => n * n)
+
+
+
+
+
+
+// function squareDigits(num){
+//     num.split('')
+//     let squares = num.map(n => n * n)
     
-    return squares.join('');
-}
-
-
-
+//     return squares.join('');
+// }
 
 
 // function sortThePile(pileOfTowels, weeklyUsedTowels) {
