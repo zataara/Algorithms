@@ -1,4 +1,16 @@
+function getMiddle(s) {
+  let arr = s.split('');
+  let n = s.length;
 
+  if(n % 2 !== 0) {
+    return s[(n/2) + 1];
+  } else {
+    return s[n/2] + s[(n/2) + 1]
+  }
+
+
+
+}
 
 
 

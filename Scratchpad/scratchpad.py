@@ -2,9 +2,13 @@
 
 
 
-
-
-
+# def get_middle(s):
+#   s = s.split(' ')
+#   n = len(s)
+#   if n % 2 != 0:
+#     return s[(n/2) + 1]
+#   else:
+#     return s[n/2] + s[n/2+1]
 
 
 
