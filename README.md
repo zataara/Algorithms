@@ -4,4 +4,4 @@
 
 
 
-- A collection of a few Algos and DS's I have worked on.
+- A collection of a few Algos and Data Structures I have worked on on CodeWars and LeetCode.
