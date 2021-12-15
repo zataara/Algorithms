@@ -1,29 +1,28 @@
-function getMiddle(s) {
-  let arr = s.split('');
-  let n = s.length;
-
-  if(n % 2 !== 0) {
-    return s[(n/2) + 1];
-  } else {
-    return s[n/2] + s[(n/2) + 1]
+var createTargetArray = function (nums, index) {
+  let out = [];
+  for (let i = 0; i < nums.length; i++) {
+    out.splice(index[i], 0, nums[i]);
   }
+  return out;
+};
 
+// function getMiddle(s) {
+//   let arr = s.split('');
+//   let n = s.length;
 
-
-}
-
-
-
-
-
+//   if(n % 2 !== 0) {
+//     return s[(n/2) + 1];
+//   } else {
+//     return s[n/2] + s[(n/2) + 1]
+//   }
+// }
 
 // function squareDigits(num){
 //     num.split('')
 //     let squares = num.map(n => n * n)
-    
+
 //     return squares.join('');
 // }
-
 
 // function sortThePile(pileOfTowels, weeklyUsedTowels) {
 //     toSort = []
@@ -36,23 +35,18 @@ function getMiddle(s) {
 //     return pileOfTowels.concat(toSort);
 // }
 
-
-
-
 // function autocomplete(input, dictionary){
 //     let out = [];
-    
+
 //     for (let word of dictionary) {
 //         compare = word.replace(/\W/g, '').slice(0,input.length)
 //         if(compare === input) {
 //             out.push(word)
 //         }
 //     }
-    
+
 //     return out;
 // }
-
-
 
 // var minMovesToSeat = function(seats, students) {
 //     let seat = seats.sort((a,b) => a -b);
@@ -65,8 +59,6 @@ function getMiddle(s) {
 
 // };
 
-
-
 // let maxArea = function maxArea(height) {
 //     let area = 0;
 //         for (let i = 0; i < height.length; i++) {
@@ -76,11 +68,6 @@ function getMiddle(s) {
 //         }
 //         return area;
 // };
-
-
-
-
-
 
 // var maxArea = function(height) {
 //     volumes = [];
@@ -129,7 +116,6 @@ function getMiddle(s) {
 // debugger
 // console.log(lengthOfLongestSubstring(h))
 
-
 // var countKDifference = function(nums, k) {
 //     let count = 0;
 //     for(let i = 0; i < nums.length - 1; i++) {
@@ -137,11 +123,11 @@ function getMiddle(s) {
 //         for(let j =1; j < nums.length; j++) {
 //             if(Math.abs(nums[i] - nums[j]) === k) {
 //                 count ++;
-                
+
 //                 console.log(nums[i])
 //                 console.log(nums[j])
 //             }
 //         }
-//     } 
+//     }
 //     return count;
 // };
