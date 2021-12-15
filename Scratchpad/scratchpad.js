@@ -1,10 +1,24 @@
-var createTargetArray = function (nums, index) {
-  let out = [];
-  for (let i = 0; i < nums.length; i++) {
-    out.splice(index[i], 0, nums[i]);
+function adjacentElementsProduct(array) {
+  let max = -Infinity;
+  let current;
+  for(let i = 0; i < array.length - 1; i ++) {
+    current = array[i] * array[i+1];
+    if(current > max) {
+      max = current
+    }
   }
-  return out;
-};
+  return max;
+}
+
+
+
+// var createTargetArray = function (nums, index) {
+//   let out = [];
+//   for (let i = 0; i < nums.length; i++) {
+//     out.splice(index[i], 0, nums[i]);
+//   }
+//   return out;
+// };
 
 // function getMiddle(s) {
 //   let arr = s.split('');
