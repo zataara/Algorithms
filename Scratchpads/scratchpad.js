@@ -1,14 +1,23 @@
-function adjacentElementsProduct(array) {
-  let max = -Infinity;
-  let current;
-  for(let i = 0; i < array.length - 1; i ++) {
-    current = array[i] * array[i+1];
-    if(current > max) {
-      max = current
-    }
+function maxDepth(root) {
+  function helper(root, level) {
+    if(!root) return level;
+    return Math.max(heper(rootleft, level + 1), helper(root.right, level +1));
   }
-  return max;
+  return helper(root, 0);
 }
+
+
+// function adjacentElementsProduct(array) {
+//   let max = -Infinity;
+//   let current;
+//   for(let i = 0; i < array.length - 1; i ++) {
+//     current = array[i] * array[i+1];
+//     if(current > max) {
+//       max = current
+//     }
+//   }
+//   return max;
+// }
 
 
 
