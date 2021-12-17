@@ -1,10 +1,24 @@
-function maxDepth(root) {
-  function helper(root, level) {
-    if(!root) return level;
-    return Math.max(heper(rootleft, level + 1), helper(root.right, level +1));
+var containsDuplicate = function(nums) {
+  for(let j = 0; j < nums.length -1; j++){
+    for(let i = j + 1; i < nums.length; i++) {
+      if(nums[j] === nums[i]){
+        return false
+      }
+    }
   }
-  return helper(root, 0);
-}
+  return true
+};
+
+
+
+
+// function maxDepth(root) {
+//   function helper(root, level) {
+//     if(!root) return level;
+//     return Math.max(heper(rootleft, level + 1), helper(root.right, level +1));
+//   }
+//   return helper(root, 0);
+// }
 
 
 // function adjacentElementsProduct(array) {
