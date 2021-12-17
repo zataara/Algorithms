@@ -1,58 +1,58 @@
-function validSolution(board) {
-  //function for checking if all numbers 1-9 are present in a given array
-  function helpCheck(arr) {
-    if (arr.length !== 9) {
-      return false;
-    }
-    let compare = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    arr.sort();
-    let same;
-    for (let i = 0; i < arr.length; i++)
-      if (arr[i] === compare[i]) {
-        same = true;
-      } else {
-        same = false;
-        return same;
-      }
-    return true;
-    }
+// function validSolution(board) {
+//   //function for checking if all numbers 1-9 are present in a given array
+//   function helpCheck(arr) {
+//     if (arr.length !== 9) {
+//       return false;
+//     }
+//     let compare = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+//     arr.sort();
+//     let same;
+//     for (let i = 0; i < arr.length; i++)
+//       if (arr[i] === compare[i]) {
+//         same = true;
+//       } else {
+//         same = false;
+//         return same;
+//       }
+//     return true;
+//     }
 
-  // prepare row for checking
-  let row = board.shift();
-  row.sort();
+//   // prepare row for checking
+//   let row = board.shift();
+//   row.sort();
 
-  // prepare column for checking
-  let column = [];
-  for (let arr of board) {
-    column.push(arr.pop());
-  }
-  column.sort();
+//   // prepare column for checking
+//   let column = [];
+//   for (let arr of board) {
+//     column.push(arr.pop());
+//   }
+//   column.sort();
 
-  // prepare 3x3 for checking
-  function check(board) {
-    function checkNine(board) {
-      let arr = [];
-      for (let i = 0; i < 3; i++) {
-        for (let j = 0; j < 3; j++) {
-          arr.push(board[i][j]);
-        }
-      }
-      return helpCheck(arr);
-    }
-    function splitAndCheck(board) {
-      for(let i = 0;){
-        checkNine(split)
-      })
-    }
-  }
+//   // prepare 3x3 for checking
+//   function check(board) {
+//     function checkNine(board) {
+//       let arr = [];
+//       for (let i = 0; i < 3; i++) {
+//         for (let j = 0; j < 3; j++) {
+//           arr.push(board[i][j]);
+//         }
+//       }
+//       return helpCheck(arr);
+//     }
+//     function splitAndCheck(board) {
+//       for(let i = 0;){
+//         checkNine(split)
+//       })
+//     }
+//   }
 
-  //check all three
-  if (helpCheck(row) && helpCheck(column) && check(board)) {
-    return true;
-  } else {
-    return false;
-  }
-}
+//   //check all three
+//   if (helpCheck(row) && helpCheck(column) && check(board)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
 
 // var containsDuplicate = function(nums) {
 //   for(let j = 0; j < nums.length -1; j++){
