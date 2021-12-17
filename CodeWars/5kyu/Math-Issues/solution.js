@@ -4,7 +4,7 @@ Math.round = function(number) {
   if (decimal === -1) {
     return number;
   } else {
-    arr.slice
+    arr.slice(0,1,2)
   }
   
   
