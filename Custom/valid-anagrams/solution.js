@@ -4,6 +4,7 @@ function createFrequencyCounter(string) {
     let charCount = frequencies.get(char) || 0;
     frequencies.set(char, charCount + 1)
   }
+  return frequencies;
 }
 
 
