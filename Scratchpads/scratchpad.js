@@ -1,20 +1,50 @@
-function parse( data ) {
-  let x = 0;
-  let out = [];
+// function partsSums(ls) {
+//   if(!ls.length) return [0]
+//   let out = []
+  
+//   ls.reverse()
+//   let totalSum = ls.reduce((a,b) => a + b)
+//   out.push(totalSum)
+  
+//   while(ls.length) {
+//     let toSubtract = ls.pop()
+//     totalSum -= toSubtract
+//     out.push(totalSum)
+//   }
+//   return out;
+// }
 
-  for(let i of data) {
-    if(i === 'i') {
-      x ++;
-    } else if(i === 'd') {
-      x --;
-    } else if(i === 's') {
-      x = x * x;
-    } else if(i === 'o') {
-      out.push(x)
-    } 
-  }
-  return out;
-}
+
+
+// let max = 0
+// let length = 0;
+// for(let sentence in sentences) {
+//   length = sentence.split(" ").length
+//   if(length > max) {
+//     max = length
+//   }
+// }
+
+// return max
+
+
+// function parse( data ) {
+//   let x = 0;
+//   let out = [];
+
+//   for(let i of data) {
+//     if(i === 'i') {
+//       x ++;
+//     } else if(i === 'd') {
+//       x --;
+//     } else if(i === 's') {
+//       x = x * x;
+//     } else if(i === 'o') {
+//       out.push(x)
+//     } 
+//   }
+//   return out;
+// }
 
 // function meeting(s) {
 //   let arr = s.split(";")
