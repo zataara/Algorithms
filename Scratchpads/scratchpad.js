@@ -1,11 +1,34 @@
+// var flipAndInvertImage = function (img) {
+//   let out = [];
+//   function flipPixel(p) {
+//     if (p === 1) {
+//       return 0;
+//     } else if (p === 0) {
+//       return 1;
+//     }
+//   }
+
+//   debugger;
+//   for (let row of img) {
+//     row.reverse();
+//     let inner = [];
+//     for (let pixel of row) {
+//       inner.push(flipPixel(pixel));
+//     }
+//     out.push(inner);
+//   }
+
+//   return out;
+// };
+
 // function partsSums(ls) {
 //   if(!ls.length) return [0]
 //   let out = []
-  
+
 //   ls.reverse()
 //   let totalSum = ls.reduce((a,b) => a + b)
 //   out.push(totalSum)
-  
+
 //   while(ls.length) {
 //     let toSubtract = ls.pop()
 //     totalSum -= toSubtract
@@ -13,8 +36,6 @@
 //   }
 //   return out;
 // }
-
-
 
 // let max = 0
 // let length = 0;
@@ -26,7 +47,6 @@
 // }
 
 // return max
-
 
 // function parse( data ) {
 //   let x = 0;
@@ -41,14 +61,14 @@
 //       x = x * x;
 //     } else if(i === 'o') {
 //       out.push(x)
-//     } 
+//     }
 //   }
 //   return out;
 // }
 
 // function meeting(s) {
 //   let arr = s.split(";")
-  
+
 //   let out = [];
 //   for(let fullName of arr) {
 //     let nameArray = fullName.split(":").reverse()
@@ -62,7 +82,6 @@
 //     return a.localeCompare(b, 'en', { sensitivity: 'base' });
 //   });
 
-
 //   let out2 = [];
 //   for(let person of localeSort) {
 //     out2.push(person.toUpperCase());
@@ -70,7 +89,6 @@
 
 //   return out2.join('');
 // }
-
 
 // function validSolution(board) {
 //   //function for checking if all numbers 1-9 are present in a given array
