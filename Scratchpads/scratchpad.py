@@ -1,18 +1,50 @@
-def number_of_pairs(gloves):
-    pairs = 0
-    counted = []
+# def num_primorial(n):
+#   factorials = []
+#   result = 1
+#   start = 2
 
-    for glove in gloves:
-      if glove not in counted:
-        counted.append(glove)
-        num_gloves = gloves.count(glove)
-        if num_gloves % 2 == 0:
-          pairs = pairs + num_gloves
-        else:
-          pairs = pairs + num_gloves - 1
+#   while n > 0:
+    
+
+#   for i in factorials:
+#     result = result * i 
+
+#   return result
+
+
+# class Node(object):
+#     def __init__(self, data):
+#         self.data = data
+#         self.next = None
+    
+# def length(node):
+#     def findCount(node):
+#       count = 0
+#       if node.next:
+#         count += 1
+#         return findCount(node.next) + count
+
+#     return findCount(node)
+  
+# def count(node, data):
+    # Your code goes here.
+
+
+# def number_of_pairs(gloves):
+#     pairs = 0
+#     counted = []
+
+#     for glove in gloves:
+#       if glove not in counted:
+#         counted.append(glove)
+#         num_gloves = gloves.count(glove)
+#         if num_gloves % 2 == 0:
+#           pairs = pairs + num_gloves
+#         else:
+#           pairs = pairs + num_gloves - 1
 
     
-    return pairs / 2
+#     return pairs / 2
 
 
 
