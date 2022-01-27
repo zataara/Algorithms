@@ -1,3 +1,36 @@
+class Solution(object):
+    def trap(self, height):
+        """
+        :type height: List[int]
+        :rtype: int
+        """
+        out = 0
+        x = len(height)
+        for i in range(0, x - 1):
+          left = height[i]
+          for j in range(i):
+            left = max(left, height[j])
+          
+          right = height[i]
+
+          for k in range(i + 1, x):
+            right = max(right, height[k])
+          
+          out = out + (min(left, right) - height[i])
+
+        return out
+
+
+# def solve(arr): 
+    
+
+#     for i in range(-1, 0 - len(arr)):
+#       for j in range(-2, 0 - len(arr)):
+#         if arr[i] == arr[j]:
+#           arr.remove(arr[j])
+#           print(arr[j])
+#     return arr
+
 # class Solution(object):
 #     def threeSumClosest(self, nums, target):
 #         """
