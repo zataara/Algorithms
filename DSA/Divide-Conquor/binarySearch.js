@@ -1,8 +1,6 @@
 function binarySearch(arr, val) {
 //Time: O(log n)
 //Space: O(1)
-  
-
   let leftIdx = 0;
   let rightIdx = arr.length - 1;
 
@@ -18,5 +16,4 @@ function binarySearch(arr, val) {
       return middleIdx;
     }
   }
-
 }
