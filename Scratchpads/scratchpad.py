@@ -1,24 +1,79 @@
-class Solution(object):
-    def trap(self, height):
-        """
-        :type height: List[int]
-        :rtype: int
-        """
-        out = 0
-        x = len(height)
-        for i in range(0, x - 1):
-          left = height[i]
-          for j in range(i):
-            left = max(left, height[j])
-          
-          right = height[i]
 
-          for k in range(i + 1, x):
-            right = max(right, height[k])
-          
-          out = out + (min(left, right) - height[i])
 
-        return out
+def is_valid_walk(walk):
+    #determine if walk is valid
+    if len(walk) != 10:
+      return False  
+    x = 0
+    y = 0
+    for dir in walk:
+      if dir == 'n':
+        x = x + 1
+      if dir == 's':
+        x = x - 1
+      if dir == 'e':
+        y = y + 1
+      if dir == 'w':
+        y = y - 1
+
+
+    if x == 0 and y == 0:
+      return True
+    else: 
+      return False
+    
+    
+
+
+
+
+# def accum(s):
+#     # your code
+#     out = []
+#     count = 0
+#     distance = len(s)
+#     for char in s:
+#       out.append(char.capitalize())
+#       out.append(char.lower()*count)
+#       count = count + 1
+#       if(count<distance):
+#         out.append('-')
+#     return ''.join(out)
+
+# from json.encoder import INFINITY
+
+
+# def sum_two_smallest_numbers(numbers):
+#     #your code here
+#     min0 = min(numbers)
+#     numbers.remove(min0)
+#     min1 = min(numbers)
+
+
+
+#     return min0 + min1
+
+#  class Solution(object):
+#     def trap(self, height):
+#         """
+#         :type height: List[int]
+#         :rtype: int
+#         """
+#         out = 0
+#         x = len(height)
+#         for i in range(0, x - 1):
+#           left = height[i]
+#           for j in range(i):
+#             left = max(left, height[j])
+          
+#           right = height[i]
+
+#           for k in range(i + 1, x):
+#             right = max(right, height[k])
+          
+#           out = out + (min(left, right) - height[i])
+
+#         return out
 
 
 # def solve(arr): 
