@@ -1,18 +1,30 @@
 
 
 
-function numberOfPairs(gloves) {
-  let pairs = 0;
-  let counted = []
-  let count = 0
-  for(let glove of gloves) {
-    if(!glove in counted) {
-      
-    }
-  }
+// var runningSum = function(nums) {
+//   let out = [];
+//   count = 0
+//   for (let num of nums) {
+//     count = num + count;
+//     out.push(count)
+//   }
 
-  return pairs
-}
+//   return out;
+// }
+
+
+// function numberOfPairs(gloves) {
+//   let pairs = 0;
+//   let counted = []
+//   let count = 0
+//   for(let glove of gloves) {
+//     if(!glove in counted) {
+      
+//     }
+//   }
+
+//   return pairs
+// }
 
 // var flipAndInvertImage = function (img) {
 //   let out = [];
